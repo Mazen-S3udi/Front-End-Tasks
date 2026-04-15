@@ -1,0 +1,435 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+ 
+}
+
+/* Background */
+#index {
+  flex-direction: column;
+  display:flex; 
+  flex: 1; 
+  background: linear-gradient(175deg, #705cb9, #43626e);
+}
+
+/*  Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 50px;
+  background: linear-gradient(155deg,#499ED8, #705cb9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999; /*to stay on top of other content */
+}
+
+#logo {
+  text-decoration: none;
+  color: #160577;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+#logo:hover {
+  color: #352549;
+  font-size: 2.2em;
+  font-weight: 700;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #160577;
+  margin-left: 25px;
+  font-size: 1.1em;
+  font-weight: 500;
+
+}
+
+.navbar a:hover {
+  color: #485005;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/*  Projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 120px; /* عشان navbar */
+}
+
+/*  Card */
+.card {
+  position: relative;
+  width: 260px;
+  padding: 15px;
+  border-radius: 12px;
+  background: linear-gradient(175deg, #48F2BE, #9E9E9E);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  text-align: center;
+}
+
+/*  Image */
+.card img {
+  width: 100%;
+
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+/*  Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #160577;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/*  Link */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: #160577;
+}
+
+/*  Hover Effect */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/*  Variations */
+.featured {
+  border: 2px solid #48F2BE;
+}
+
+.completed {
+  border: 2px solid #9E9E9E;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* login page */
+#login {
+    background: linear-gradient(175deg, #160577, #ec0b0b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    color: rgb(212, 207, 221);
+}
+
+/* form */
+form {
+    background: rgb(150, 69, 69);
+    padding: 30px;
+    border-radius: 0px 45px 0px 45px;
+    width: 350px;
+    margin-top: 20px;
+
+    box-shadow: 0 10px 25px blur rgba(0,0,0,0.2);
+}
+
+/* labels */
+label {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #140129;
+}
+
+/* inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+#register input {
+    width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+input:focus {
+    border-color: #160577;
+    box-shadow: 0 0 5px rgba(22,5,119,0.4);
+}
+
+/* button */
+button, input[type="submit"] {
+    background: linear-gradient(to right, #160577, #ec0b0b);
+    color: rgb(56, 10, 10);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* remove link style inside button */
+button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* links */
+p {
+    margin-top: 15px;
+    text-align: center;
+    color :rgb(12, 12, 14)
+}
+
+#one {
+    color: #c5a9c5;
+    text-decoration: none;
+    font-weight: bold;
+}
+#two {
+    color: #dfdbdf;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* register page */
+#register {
+    background: linear-gradient(to right, #160577, #ec0b0b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register form {
+    width: 350px;
+    background: linear-gradient(to right,#667eea,#764ba2);
+}
+
+#register {
+    background: linear-gradient(to right, #160577, #ec0b0b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    color: rgb(39, 4, 78);
+}
+
+#register button,
+#register input[type="submit"] {
+    background: linear-gradient(to right,#0b6e86,#20033d);
+    color: rgb(233, 228, 228);
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+
+/*----------My Portfolio page style---------------------*/
+/* RESET */
+#cvstyle * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+#cvstyle {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #499ED8, #9D9E84);
+}
+
+/* HEADER CARD */
+#cvstyle #photodiv {
+  width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(175deg, #48F2BE, #9E9E9E);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+#cvstyle #photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px double #48F2BE;
+}
+
+/* NAME */
+#cvstyle #name {
+  color: white;
+  margin-top: 10px;
+}
+
+/* LINE */
+#cvstyle #line1 {
+  height: 2px;
+  background: white;
+  border: none;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+#cvstyle section {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+#cvstyle section h1,
+#cvstyle section h2 {
+  color: #66246e;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+#cvstyle section p {
+  line-height: 1.6;
+}
+
+/* LIST */
+#cvstyle ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* TABLE */
+#cvstyle table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#cvstyle th {
+  background: #66246e;
+  color: white;
+}
+
+#cvstyle th, 
+#cvstyle td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* SOCIAL SECTION */
+#cvstyle #social {
+  text-align: center;
+}
+
+/* ICON CONTAINER */
+#cvstyle #social-icons {
+  margin-top: 15px;
+}
+
+/* ICONS */
+#cvstyle #social-icons a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 24px;
+  color: white;
+  background: #66246e;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT 🔥 */
+#cvstyle #social-icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* EACH PLATFORM COLOR */
+#cvstyle #social-icons a:nth-child(1):hover {
+  background: #000; /* GitHub */
+}
+
+#cvstyle #social-icons a:nth-child(2):hover {
+  background: #0077b5; /* LinkedIn */
+}
+
+#cvstyle #social-icons a:nth-child(3):hover {
+  background: #1877f2; /* Facebook */
+}
+
+#cvstyle #social-icons a:nth-child(4):hover {
+  background: #e4405f; /* Instagram */
+}
+#cvstyle #social-icons a:nth-child(5):hover {
+  background: #0edf42; /* WhatsApp */
+}
+#cvstyle #social-icons a:nth-child(6):hover {
+  background: #90eb19; /* Email */
+}
+
+#cvstyle #social-icons a::after {
+  content: attr(title);
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #333;
+}
+
